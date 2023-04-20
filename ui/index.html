@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plastic Surgeon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="app">
+        <!-- v-if="isOpen" Add to container when done styling -->
+        <div class="background" v-if="isOpen">
+            <div class="container" > 
+                <h1 class="headingText">Plastic Surgeon</h1>
+                
+                <h2 class="selectionText">Selection: {{selection}} / {{maxValue}}</h2>
+                <div class="rangeContainer">
+                    <input type="range" class="mySlider" min="0" :max="maxValue" v-model="selection">
+                </div> 
+                <img class="scrollbar" src="imgs/scroller_right_bottom.png">
+                <div class="buttonbar">
+                    <button class="button exitButton" @click="exitUI">Exit</button>
+                    <button class="button confirmButton" @click="confirmChange">Confirm</button>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

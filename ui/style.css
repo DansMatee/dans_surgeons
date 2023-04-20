@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+	font-family: crock;
+	src: url(crock.ttf);
+}
+
+* {
+	font-family: crock;
+	overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    width: 450px;
+    height: 350px;
+    background-size: 450px 350px;
+    background-image: url("imgs/inkroller_1aa.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 5%;
+    left: 5%;
+}
+
+.container {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    top: 5%;
+    left: 5%;
+    text-align: center;
+}
+
+.scrollbar {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.headingText {
+    color: white;
+    background-image: url("imgs/menu_header_1a.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 400px 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 100;
+}
+
+.selectionText {
+    color: white;
+    font-size: 28px;
+    font-weight: 100;
+}
+
+.buttonbar {
+    position: absolute;
+    width: 100%;
+    bottom: 5px;
+}
+
+.button {
+    width: 100px;
+    height: 30px;
+    margin: 0 50px;
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+}
+
+.exitButton {   
+    background: none;
+    border: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.exitButton:hover {
+    color: red;
+}
+
+.confirmButton {
+    background: none;
+    border: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.confirmButton:hover {
+    color: green;
+}
+
+.rangeContainer {
+    padding: 10px;
+}
+
+.mySlider {
+    width: 15rem;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+.mySlider::-webkit-slider-runnable-track {
+    background: rgb(238, 238, 238);
+    border-radius: 0.5rem;
+    height: 0.5rem;
+}
+
+.mySlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: -4px;
+    background-color: red;
+    height: 2rem;
+    width: 1rem;
+}
+
+.mySlider::-moz-range-track {
+    background: rgb(238, 238, 238);
+    border-radius: 0.5rem;
+    height: 0.5rem;
+}
+
+.mySlider::-moz-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: -12px;
+    background-color: red;
+    height: 2rem;
+    width: 1rem;
+}
+
